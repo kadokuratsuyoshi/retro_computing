@@ -14,4 +14,4 @@ ROM.HEX のつくりかた
 \
 ３．出来上がり。
 \
-![V20BASIC, unimon_8086](https://github.com/kadokuratsuyoshi/retro_computing/SBCV20/SBCV20_V20BASIC_unimon.png)
+![V20BASIC, unimon_8086](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/SBCV20/SBCV20_V20BASIC_unimon.png)
