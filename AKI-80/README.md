@@ -1,7 +1,7 @@
 # AKI-80
 電源ONで、unimon_Z80が起動。
 \
-##1+リターンキーで、BASICが起動。
+ #1+リターンキーで、BASICが起動。
 \
 monitor+リターンキーで、unimon_Z80が再起動。
 \
