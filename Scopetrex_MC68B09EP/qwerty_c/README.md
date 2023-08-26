@@ -11,5 +11,5 @@ https://vandenbran.de/post/2016-02-01-a-modern-toolchain-for-vectrex-development
 ３．出来上がり。
 \
 ![qwerty_c](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/Scopetrex_MC68B09EP/qwerty_c/qwerty.png)
-![qwerty_c](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/Scopetrex_MC68B09EP/qwerty_c/DoKA.jpg)
-![qwerty_c](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/Scopetrex_MC68B09EP/qwerty_c/qwerty_c.jpg)
+![qwerty_c](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/Scopetrex_MC68B09EP/qwerty_c/DoKA.JPG)
+![qwerty_c](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/Scopetrex_MC68B09EP/qwerty_c/qwerty_c.JPG)
