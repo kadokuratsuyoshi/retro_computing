@@ -6,11 +6,13 @@ PIC18F47Q43 に、basicmon.hexを書き込む。
 \\
 \
 E000R で、EhBASICが起動。
+\
 ]
 \
 ]CALL -256 で、Woz Monitorが再起動。
 \
 \\
+\
 \
 putc.txtのつくりかた
 \
