@@ -21,5 +21,5 @@ Woz Monitorから、putc.txtをコピペ。
 \
 で実行
 
-![qwerty_c](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/EMUZ80-6502/putc/6502c.png)
-![qwerty_c](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/EMUZ80-6502/putc/6502bas.JPG)
+![putc](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/EMUZ80-6502/putc/6502c.png)
+![putc](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/EMUZ80-6502/putc/6502bas.png)
