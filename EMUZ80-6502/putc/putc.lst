@@ -1,0 +1,147 @@
+                              1 ;--------------------------------------------------------
+                              2 ; File Created by SDCC : free open source ANSI-C Compiler
+                              3 ; Version 4.2.0 #13081 (MINGW64)
+                              4 ;--------------------------------------------------------
+                              5 	.module putc
+                              6 	.optsdcc -mmos6502
+                              7 	
+                              8 	.globl __TEMP
+                              9 	.globl __BASEPTR
+                             10 	.area ZP      (PAG)
+   0000                      11 __TEMP:	.ds 8
+   0008                      12 __BASEPTR:	.ds 2
+                             13 ;--------------------------------------------------------
+                             14 ; Public variables in this module
+                             15 ;--------------------------------------------------------
+                             16 	.globl _main
+                             17 	.globl _putchar
+                             18 ;--------------------------------------------------------
+                             19 ; ram data
+                             20 ;--------------------------------------------------------
+                             21 	.area ZP      (PAG)
+                             22 ;--------------------------------------------------------
+                             23 ; overlayable items in ram
+                             24 ;--------------------------------------------------------
+                             25 ;--------------------------------------------------------
+                             26 ; absolute external ram data
+                             27 ;--------------------------------------------------------
+                             28 	.area DABS    (ABS)
+                             29 ;--------------------------------------------------------
+                             30 ; external initialized ram data
+                             31 ;--------------------------------------------------------
+                             32 	.area DATA
+                             33 ;--------------------------------------------------------
+                             34 ; extended address mode data
+                             35 ;--------------------------------------------------------
+                             36 	.area BSS
+                             37 ;--------------------------------------------------------
+                             38 ; global & static initialisations
+                             39 ;--------------------------------------------------------
+                             40 	.area _CODE
+                             41 	.area GSINIT
+                             42 	.area GSFINAL
+                             43 	.area GSINIT
+                             44 ;--------------------------------------------------------
+                             45 ; Home
+                             46 ;--------------------------------------------------------
+                             47 	.area _CODE
+                             48 	.area _CODE
+                             49 ;--------------------------------------------------------
+                             50 ; code
+                             51 ;--------------------------------------------------------
+                             52 	.area CODE
+                             53 ;------------------------------------------------------------
+                             54 ;Allocation info for local variables in function 'main'
+                             55 ;------------------------------------------------------------
+                             56 ;	putc.c: 3: int main(void)
+                             57 ;	-----------------------------------------
+                             58 ;	 function main
+                             59 ;	-----------------------------------------
+                             60 ;	Register assignment is optimal.
+                             61 ;	Stack space usage: 0 bytes.
+   0000                      62 _main:
+                             63 ;	putc.c: 5: putchar(0x0d);
+   0000 A2 00         [ 2]   64 	ldx	#0x00
+   0002 A9 0D         [ 2]   65 	lda	#0x0d
+   0004 20r00r00      [ 6]   66 	jsr	_putchar
+                             67 ;	putc.c: 6: putchar(0x0a);
+   0007 A2 00         [ 2]   68 	ldx	#0x00
+   0009 A9 0A         [ 2]   69 	lda	#0x0a
+   000B 20r00r00      [ 6]   70 	jsr	_putchar
+                             71 ;	putc.c: 7: putchar('h');
+   000E A2 00         [ 2]   72 	ldx	#0x00
+   0010 A9 68         [ 2]   73 	lda	#0x68
+   0012 20r00r00      [ 6]   74 	jsr	_putchar
+                             75 ;	putc.c: 8: putchar('e');
+   0015 A2 00         [ 2]   76 	ldx	#0x00
+   0017 A9 65         [ 2]   77 	lda	#0x65
+   0019 20r00r00      [ 6]   78 	jsr	_putchar
+                             79 ;	putc.c: 9: putchar('l');
+   001C A2 00         [ 2]   80 	ldx	#0x00
+   001E A9 6C         [ 2]   81 	lda	#0x6c
+   0020 20r00r00      [ 6]   82 	jsr	_putchar
+                             83 ;	putc.c: 10: putchar('l');
+   0023 A2 00         [ 2]   84 	ldx	#0x00
+   0025 A9 6C         [ 2]   85 	lda	#0x6c
+   0027 20r00r00      [ 6]   86 	jsr	_putchar
+                             87 ;	putc.c: 11: putchar('o');
+   002A A2 00         [ 2]   88 	ldx	#0x00
+   002C A9 6F         [ 2]   89 	lda	#0x6f
+   002E 20r00r00      [ 6]   90 	jsr	_putchar
+                             91 ;	putc.c: 12: putchar(',');
+   0031 A2 00         [ 2]   92 	ldx	#0x00
+   0033 A9 2C         [ 2]   93 	lda	#0x2c
+   0035 20r00r00      [ 6]   94 	jsr	_putchar
+                             95 ;	putc.c: 13: putchar('E');
+   0038 A2 00         [ 2]   96 	ldx	#0x00
+   003A A9 45         [ 2]   97 	lda	#0x45
+   003C 20r00r00      [ 6]   98 	jsr	_putchar
+                             99 ;	putc.c: 14: putchar('M');
+   003F A2 00         [ 2]  100 	ldx	#0x00
+   0041 A9 4D         [ 2]  101 	lda	#0x4d
+   0043 20r00r00      [ 6]  102 	jsr	_putchar
+                            103 ;	putc.c: 15: putchar('U');
+   0046 A2 00         [ 2]  104 	ldx	#0x00
+   0048 A9 55         [ 2]  105 	lda	#0x55
+   004A 20r00r00      [ 6]  106 	jsr	_putchar
+                            107 ;	putc.c: 16: putchar('Z');
+   004D A2 00         [ 2]  108 	ldx	#0x00
+   004F A9 5A         [ 2]  109 	lda	#0x5a
+   0051 20r00r00      [ 6]  110 	jsr	_putchar
+                            111 ;	putc.c: 17: putchar('8');
+   0054 A2 00         [ 2]  112 	ldx	#0x00
+   0056 A9 38         [ 2]  113 	lda	#0x38
+   0058 20r00r00      [ 6]  114 	jsr	_putchar
+                            115 ;	putc.c: 18: putchar('0');
+   005B A2 00         [ 2]  116 	ldx	#0x00
+   005D A9 30         [ 2]  117 	lda	#0x30
+   005F 20r00r00      [ 6]  118 	jsr	_putchar
+                            119 ;	putc.c: 19: putchar('-');
+   0062 A2 00         [ 2]  120 	ldx	#0x00
+   0064 A9 2D         [ 2]  121 	lda	#0x2d
+   0066 20r00r00      [ 6]  122 	jsr	_putchar
+                            123 ;	putc.c: 20: putchar('6');
+   0069 A2 00         [ 2]  124 	ldx	#0x00
+   006B A9 36         [ 2]  125 	lda	#0x36
+   006D 20r00r00      [ 6]  126 	jsr	_putchar
+                            127 ;	putc.c: 21: putchar('5');
+   0070 A2 00         [ 2]  128 	ldx	#0x00
+   0072 A9 35         [ 2]  129 	lda	#0x35
+   0074 20r00r00      [ 6]  130 	jsr	_putchar
+                            131 ;	putc.c: 22: putchar('0');
+   0077 A2 00         [ 2]  132 	ldx	#0x00
+   0079 A9 30         [ 2]  133 	lda	#0x30
+   007B 20r00r00      [ 6]  134 	jsr	_putchar
+                            135 ;	putc.c: 23: putchar('2');
+   007E A2 00         [ 2]  136 	ldx	#0x00
+   0080 A9 32         [ 2]  137 	lda	#0x32
+   0082 20r00r00      [ 6]  138 	jsr	_putchar
+                            139 ;	putc.c: 24: return 0;
+   0085 A9 00         [ 2]  140 	lda	#0x00
+   0087 AA            [ 2]  141 	tax
+                            142 ;	putc.c: 25: }
+   0088 60            [ 6]  143 	rts
+                            144 	.area CODE
+                            145 	.area RODATA
+                            146 	.area XINIT
+                            147 	.area CABS    (ABS)
