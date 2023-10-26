@@ -3,6 +3,8 @@ PIC18F47Q43 に、basicmon.hexを書き込む。
 \
 電源ONで、Woz Monitorが起動。
 \
+E000R で、EhBASICが起動。
+\
 ]CALL -256 で、Woz Monitorが再起動。
 \
 ]
