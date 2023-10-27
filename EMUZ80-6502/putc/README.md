@@ -5,7 +5,7 @@ PIC18F47Q43 に、basicmon.hexを書き込む。
 \
 \\
 \
-E000R で、EhBASICが起動。
+E000R で、AppleII BASIC Subset が起動。
 \
 ]
 \
