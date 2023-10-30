@@ -16,7 +16,7 @@ E000R で、AppleII BASIC Subset が起動。
 \
 putc.txtのつくりかた
 \
-０．sdcc 環境を準備する
+０．sdcc 環境を準備する (sdcc - small device c compiler)
 \
 　　Windows：
 \
