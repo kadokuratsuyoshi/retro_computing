@@ -3,4 +3,4 @@ reference : [https://www.instructables.com/Arduino-XY-Oscilloscope-Shield/](http
 \
 ![68k-MBC](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/CPM68k_68k-MBC/68k-MBC.JPG)
 \
-![boot](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/CPM68k_68k-MBC/boot.JPG)
+![boot](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/CPM68k_68k-MBC/boot.jpg)
