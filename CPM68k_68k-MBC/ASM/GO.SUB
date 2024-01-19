@@ -1,0 +1,3 @@
+era hello.68k
+as68 -L -P hello.s
+lo68 -r -o hello.68k hello.o
