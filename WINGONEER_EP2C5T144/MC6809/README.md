@@ -9,6 +9,8 @@ https://www.intel.com/content/www/us/en/software-kit/711791/intel-quartus-ii-web
 \
 3.gosof1.batを実行してダウンロード、リセットスタート。
 \
+TXD : 103pin, RXD : 101pin, Baudrate : 115200bps, Data : 8bit, Parity : none, Stopbit : 1bit, Flow : none
+\
 \
 ![mc6809](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/WINGONEER_EP2C5T144/MC6809/mc6809.jpg)
 \
