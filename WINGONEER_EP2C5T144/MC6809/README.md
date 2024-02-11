@@ -10,6 +10,6 @@ https://www.intel.com/content/www/us/en/software-kit/711791/intel-quartus-ii-web
 3.gosof1.batを実行してダウンロード、リセットスタート。
 \
 \
-![mc6809](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/WINGONEER_EP2C5T144/MC6809/mc6809.JPG)
+![mc6809](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/WINGONEER_EP2C5T144/MC6809/mc6809.jpg)
 \
 ![basic](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/WINGONEER_EP2C5T144/MC6809/basic.jpg)
