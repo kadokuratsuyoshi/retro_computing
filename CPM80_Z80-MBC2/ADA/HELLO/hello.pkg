@@ -1,0 +1,8 @@
+with Util;
+
+package body hello is
+    use Util;
+
+begin
+    put("hello, world");
+end hello;
