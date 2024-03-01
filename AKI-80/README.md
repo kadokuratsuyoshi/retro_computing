@@ -1,6 +1,7 @@
 # AKI-80
 \
-オリジナルの参照先(Special Thanks akih-san)：https://github.com/akih-san/AKI-80
+オリジナルの参照先(Special Thanks to akih-san)：https://github.com/akih-san/AKI-80
+\
 \
 電源ONで、unimon_Z80が起動。
 \
