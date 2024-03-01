@@ -1,0 +1,35 @@
+With Floatio,Floatops,Longio,Longops,Util;
+package body Asciiart is
+  CA, CB, A, B, T : Long_Float;
+  X, Y, I : Integer;
+  CH : Character;
+  use Util;
+Begin
+  For Y In -12..12 Loop
+    For X In -39..39 Loop
+      CA := Long_Float(X)*0.0458;
+      CB := Long_Float(Y)*0.08333;
+      A := CA;
+      B := CB;
+      I := 0;
+      Loop
+        T := A*A-B*B+CA;
+        B := 2.0*A*B+CB;
+        A := T;
+        Exit When (A*A+B*B) > 4.0;
+        Exit When I > 15;
+        I := I + 1;
+      End Loop;
+      If I > 15 Then
+        Put(" ");
+      Else
+        If I > 9 Then
+          I := I + 7;
+        End If;
+        CH := Character'val(48+I);
+        Put(CH);
+      End If;
+    End Loop;
+    New_line;
+  End Loop;
+End Asciiart;
