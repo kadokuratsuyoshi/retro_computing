@@ -1,0 +1,26 @@
+With Floatio,Floatops,Longio,Longops,Mathlib;
+package body Sincos is
+  -- Sample ADA program to get the trigonometric function
+  N, X, YS, YC, YT : Float := 0.0;
+  i : Integer;
+  use Mathlib;
+Begin
+  Put(" Theta       Sin         Cos         Tan");
+  New_line;
+  N := 0.0;
+  For i In 1..9 Loop
+    X := 3.14159265358979*N/180.0;
+	YS := Float(Sin(Long_Float(X)));
+	YC := Float(Cos(Long_Float(X)));
+	YT := Float(Tan(Long_Float(X)));
+	Floatio.Put(N);
+	Put(" ");
+	Floatio.Put(YS);
+	Put(" ");
+	Floatio.Put(YC);
+	Put(" ");
+	Floatio.Put(YT);
+	New_line;
+	N := N + 45.0;
+  End Loop;
+End Sincos;
