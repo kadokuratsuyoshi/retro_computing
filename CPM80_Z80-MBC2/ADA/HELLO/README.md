@@ -1,6 +1,6 @@
 # CP/M80_Z80-MBC2/ADA/HELLO
 \
-G Drive (DS0N07.DSK)に インプリメント済みの JANUS / ADA version 1.5.0 と入れ替える。（要バックアップ）
+G Drive (DS0N06.DSK)に インプリメント済みの JANUS / ADA version 1.5.0 と入れ替える。（要バックアップ）
 \
 G> janus hello でコンパイル
 \
