@@ -2,6 +2,7 @@
 
 ROMSIZE         equ     $010000 ;64KB
 RAMSIZE         equ     $100000 ;1MB
+;RAMSIZE         equ     $080000 ;512kB
 RAMEND          equ     RAM+RAMSIZE
 INITIAL_SP      equ     RAMEND
 ;-------------------------------------------------------------------------------
@@ -54,12 +55,13 @@ APPMEMSTART    equ     SYSMEMSTART+SYSMEMSIZE
 * This lot is in RAM
 
 ;	ORG	$40000
-	ORG	$E00200
+	ORG	$E80200
 ram_strt
+;ram_strt	ds.l	$100			* allow 1K for the stack, this should be plenty
 						* I'll allow 1K for the stack
 
 ;	ORG	$40400
-	ORG	$E00400
+	ORG	$E80400
 	even
 ram_base
 LAB_WARM	ds.w	1			* BASIC warm start entry point
@@ -210,9 +212,15 @@ file_id	ds.l	1			* load/save file ID
 		even
 		dc.w	0			* dummy even value and zero pad byte
 		even
-prg_strt
+;prg_strt
+prg_strt	EQU	$E10000
 ;ram_top	EQU	$48000		* last RAM byte + 1
-ram_top	EQU	$E48000			* last RAM byte + 1
+* Use these two lines when running from ROM
+;ram_addr	EQU	$E8000		* RAM start address
+;ram_size	EQU	$08000		* RAM size
+ram_addr	EQU	$E00000		* RAM start address
+ram_size	EQU	$100000		* RAM size
+ram_top		EQU	$E80000		* last RAM byte + 1
 
 ; EhBasic ----------------------------------------
 

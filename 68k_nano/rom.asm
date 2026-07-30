@@ -2200,18 +2200,18 @@ VEC_IN
 ;       jsr     (a1)
 ;	rts
 
-;     MOVEM.L A0/D1,-(A7)      ; ãƒ¬ã‚¸ã‚¹ã‚¿ã‚’ä¿å­˜
-;     LEA.L   $A00000,A0       ; 68k nanoã®UARTã‚¢ãƒ‰ãƒ¬ã‚¹
-;     MOVE.B  (A0),D1          ; UARTã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚’èª­ã¿è¾¼ã¿
-;     BTST    #0,D1            ; ãƒ‡ãƒ¼ã‚¿ãƒ¬ãƒ‡ã‚£ãƒ“ãƒƒãƒˆã‚’ãƒ†ã‚¹ãƒˆ
-;     BEQ.S   RXNOTREADY       ; UARTã®å—ä¿¡æº–å‚™ãŒã§ãã¦ã„ãªã‘ã‚Œã°åˆ†å²
-;     MOVE.B  0(A0),D0         ; å—ä¿¡ã—ãŸæ–‡å­—ã‚’èª­ã¿è¾¼ã¿
-;     MOVEM.L (A7)+,A0/D1      ; ãƒ¬ã‚¸ã‚¹ã‚¿ã‚’å¾©å…ƒ
-;     ORI.B   #1,CCR           ; ã‚­ãƒ£ãƒªãƒ¼ã‚’ã‚»ãƒƒãƒˆï¼ˆæ–‡å­—ã‚’å—ä¿¡ã—ãŸï¼‰
+;     MOVEM.L A0/D1,-(A7)      ; ƒŒƒWƒXƒ^‚ð•Û‘¶
+;     LEA.L   $A00000,A0       ; 68k nano‚ÌUARTƒAƒhƒŒƒX
+;     MOVE.B  (A0),D1          ; UARTƒXƒe[ƒ^ƒX‚ð“Ç‚Ýž‚Ý
+;     BTST    #0,D1            ; ƒf[ƒ^ƒŒƒfƒBƒrƒbƒg‚ðƒeƒXƒg
+;     BEQ.S   RXNOTREADY       ; UART‚ÌŽóM€”õ‚ª‚Å‚«‚Ä‚¢‚È‚¯‚ê‚Î•ªŠò
+;     MOVE.B  0(A0),D0         ; ŽóM‚µ‚½•¶Žš‚ð“Ç‚Ýž‚Ý
+;     MOVEM.L (A7)+,A0/D1      ; ƒŒƒWƒXƒ^‚ð•œŒ³
+;     ORI.B   #1,CCR           ; ƒLƒƒƒŠ[‚ðƒZƒbƒgi•¶Žš‚ðŽóM‚µ‚½j
 ;     RTS
 ; RXNOTREADY:
-;     MOVEM.L (A7)+,A0/D1      ; ãƒ¬ã‚¸ã‚¹ã‚¿ã‚’å¾©å…ƒ
-;     ANDI.B  #$FE,CCR         ; ã‚­ãƒ£ãƒªãƒ¼ã‚’ã‚¯ãƒªã‚¢ï¼ˆæ–‡å­—ãªã—ï¼‰
+;     MOVEM.L (A7)+,A0/D1      ; ƒŒƒWƒXƒ^‚ð•œŒ³
+;     ANDI.B  #$FE,CCR         ; ƒLƒƒƒŠ[‚ðƒNƒŠƒAi•¶Žš‚È‚µj
 ;     RTS
 
 ; VEC_IN1:
@@ -2232,11 +2232,11 @@ VEC_IN
 	
 VEC_IN1:
 	lea.l	UART,a1
-        btst.b  #0,LSR(a1)     ; DR (ãƒ‡ãƒ¼ã‚¿å—ä¿¡å®Œäº†) ã‚’ãƒã‚§ãƒƒã‚¯
-;       beq     VEC_IN1           ; 0 ãªã‚‰æ–‡å­—ãŒæ¥ã‚‹ã¾ã§ãƒ«ãƒ¼ãƒ—
-        bne     VEC_IN2           ; 0 ã§ãªã„ãªã‚‰æ–‡å­—ã‚’èª­ã‚€
-;       move.b  RBR,D0     ; æ–‡å­—ã‚’èª­ã¿è¾¼ã¿
-;       andi.b  #$7F,D0         ; 7ãƒ“ãƒƒãƒˆ ASCII ã«ãƒžã‚¹ã‚¯ (å¿…è¦ã«å¿œã˜ã¦)
+        btst.b  #0,LSR(a1)     ; DR (ƒf[ƒ^ŽóMŠ®—¹) ‚ðƒ`ƒFƒbƒN
+;       beq     VEC_IN1           ; 0 ‚È‚ç•¶Žš‚ª—ˆ‚é‚Ü‚Åƒ‹[ƒv
+        bne     VEC_IN2           ; 0 ‚Å‚È‚¢‚È‚ç•¶Žš‚ð“Ç‚Þ
+;       move.b  RBR,D0     ; •¶Žš‚ð“Ç‚Ýž‚Ý
+;       andi.b  #$7F,D0         ; 7ƒrƒbƒg ASCII ‚Éƒ}ƒXƒN (•K—v‚É‰ž‚¶‚Ä)
 
 	ORI.b		#$00,d0		* set z flag
 	ANDI.B	#$FE,CCR
@@ -9870,7 +9870,7 @@ LAB_MSZM
 
 LAB_SMSG
 	dc.b	' Bytes free',$0D,$0A,$0A
-	dc.b	'Enhanced 68k BASIC Version 1.10 for 68k nano',$0D,$0A,$00
+	dc.b	'Enhanced 68k BASIC Version 1.10',$0D,$0A,$00
 
 *************************************************************************************
 * EhBASIC keywords quick reference list								*
