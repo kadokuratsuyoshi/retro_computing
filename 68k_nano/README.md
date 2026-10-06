@@ -19,5 +19,7 @@ ROM.HEX のつくりかた
 \\
 ![68k_nano, EhBASIC](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/68k_nano/68k_nano.png)
 \
+![68k_nano, EhBASIC](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/68k_nano/68k_nano_asciiart.png)
+\
 ![68k_nano, EhBASIC](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/68k_nano/68k_nano_SBC.JPG)
 \
