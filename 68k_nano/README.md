@@ -11,7 +11,7 @@
 基板本体のリセットキー押しで、68K NANOが再起動。
 \
 \
-rom-l.bin(ODD)、rom-u.bin(BIN) のつくりかた
+rom-l.bin(ODD)、rom-u.bin(EVEN) のつくりかた
 \
 １．make を実行する。
 \
