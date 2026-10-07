@@ -22,4 +22,6 @@ rom-l.bin(ODD)、rom-u.bin(EVEN) のつくりかた
 ![68k_nano, EhBASIC](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/68k_nano/68k_nano_asciiart.png)
 \
 ![68k_nano, EhBASIC](https://github.com/kadokuratsuyoshi/retro_computing/blob/main/68k_nano/68k_nano_SBC.JPG)
-\
+・確認できているバグ
+　PRINT EXP(1) が 2.7182718... にならない(オリジナル版から存在)
+  LIST コマンドが暴走する。(しばらくの期間 Ctrl+C でストップする)
